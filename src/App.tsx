@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import DonationSection from './DonationSection'
 import './App.css'
 
 type Page = 'home' | 'about'
@@ -175,10 +176,11 @@ function HomePage({ navigate }: { navigate: PageLinkHandler }) {
         <span className="eyebrow">GOOD PEOPLE MAKE GOOD PAWS</span>
         <h2>There’s more than<br /><em>one way to help.</em></h2>
         <p>Foster for a while, lend a hand, or help cover the everyday essentials. Every bit of care counts.</p>
-        <a className="button button-light" href="mailto:hello@goodpawsrescue.org?subject=I%27d%20like%20to%20help">
-          Find your way to help <span aria-hidden="true">↗</span>
+        <a className="button button-light" href="#donate">
+          Donate to Good Paws <span aria-hidden="true">↗</span>
         </a>
       </section>
+      <DonationSection />
     </main>
   )
 }
